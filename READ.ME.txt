@@ -1,0 +1,52 @@
+#Kevin Melgar — Portfolio
+
+This is my personal portfolio, where I showcase my design style, my projects, and the modern interfaces I develop.
+My approach is always the same: **every detail should look elegant, minimalist, and professional.**
+
+---
+
+## 🚀 Technologies used
+
+* **HTML5**
+* **CSS3 (animations, gradients, modern UI)**
+* **JavaScript (interactivity, sliders, carousels, UI logic)**
+* **EmailJS** for sending forms
+* **Responsive and mobile-first design**
+
+---
+
+## 🎨 Main features of the portfolio
+
+* Sections with a **clean** design and fully customized.
+* **Hero Section** with smooth animations.
+* **About Me** with a visually modern card.
+* **Carousels** with fluid movement and gradients.
+* **Custom cards** for services, skills, and projects.
+* Extensive use of **gradients**, **blur effects**, **minimalist UI**, and **animated components**.
+
+---
+
+## 📁 Project structure
+
+```
+/Media         → Images, icons, portfolio assets  
+style.css      → All stylesheets  
+sliders.js      → Carousel, sliders, and event logic  
+index.html     → Portfolio home page  
+```
+
+---
+
+## 📬 Contact
+
+If you would like to contact me, collaborate, or see more of my work:
+
+**LinkedIn:** linkedin.com/in/kevin
+**Email:** *(the one you use in your portfolio, I can add it if you want)*
+
+
+## 📄 License
+
+This project is completely free for review and learning purposes.
+Any design or code can serve as inspiration, but the style is **personal creative property**.
+

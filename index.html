@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Eduzac - Learn. Adapt. Evolve.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero-section">
+
+<header class="navbar">
+    <nav>
+        <a href="">About me</a>
+        <a href="">Academic Background</a>
+        <a href="">My Projects</a>
+        <a href="">Skills</a>
+        <a href="">Volunteers</a>
+    </nav>
+
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+<script>
+    const toggle = document.getElementById("menuToggle");
+    const nav = document.querySelector(".navbar nav");
+
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("open");
+        toggle.classList.toggle("open");
+    });
+</script>
+
+        
+        <div class="content">
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img src="Media/NewProfileImage.png" alt="Kevin Melgar">
+                </div>
+                <div class="profile-text">
+                    <h1>Kevin Melgar</h1>
+                    <p class="tagline">Passionate about design, as it allows me to communicate visually and creatively, while also having a strong interest in innovation and emerging trends. My goal is to blend design with strategic marketing to create experiences that not only look great, but also connect, persuade, and deliver real impact.                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wave SVG -->
+        <div class="wave-container">
+            <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,120 L0,120 Z" fill="#ffffff"></path>
+            </svg>
+        </div>
+
+        <!-- Botones -->
+        <div class="floating-buttons">
+            <button class="follow-btn">Contact Me!</button>
+            <button class="follow-btn" onclick="window.location.href='https://www.linkedin.com/in/kevin-melgar21/'">LinkedIn</button>
+            <button class="follow-btn" id="downloadCV">CV</button>
+
+            <script>
+                document.getElementById('downloadCV').addEventListener('click', () => {
+                    const link = document.createElement('a');
+                    link.href = 'Documents/Kevin Melgar - CV.pdf';
+                    link.download = 'Documents/Kevin Melgar - CV.pdf';
+                    link.click();
+                });
+            </script>
+        </div>
+    </div>
+
+<section class="teaching-card">
+    <div class="card-container">
+
+        <div class="card-image">
+            <img src="Media/Marketing.png" alt="Teaching Photo">
+        </div>
+
+        <div class="card-content">
+            <h2 class="card-title">About me!</h2>
+
+            <p class="card-text">
+I am a dedicated full-time student about to graduate from a three-year scholarship program, where I developed strong skills in English, computing, and essential life values. This experience shaped my mindset of continuous learning and personal growth. Passionate about marketing, I aim to help brands reach new heights through meaningful strategies. I am also a compassionate and proactive individual, committed to supporting others and making a positive impact in my community.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="formacion-section">
+  <h2 class="formacion-title">Academic Background</h2>
+
+  <!-- Contenedor de birrete + cards académicas -->
+  <div class="franja-academica">
+    <div class="birrete-container">
+      <img src="Media/About_me_-removebg-preview.png" alt="Birrete" class="birrete" />
+    </div>
+
+    <div class="academica-cards">
+      <div class="card-academica">
+        <h3>Basic Education</h3>
+        <p>(2014 - 2022)<br>Centro Escolar Colonia San Rafael</p>
+        <span>Average: 9.5</span>
+      </div>
+
+      <div class="card-academica">
+        <h3>Highschool</h3>
+        <p>(2024 - 2025)<br>Complejo Educativo Reparto Valle Nuevo</p>
+        <span>Average: 9.5</span>
+      </div>
+
+      <div class="card-academica">
+        <h3>Scholarship</h3>
+        <p>(2023 - 2025)<br>Centro ¡Superate! ADOC</p>
+        <span>Average: 9.2</span>
+      </div>
+    </div>
+  </div>
+
+    <!-- Sección My Projects -->
+    <section class="projects-section">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="card-inner">
+                    <div class="card-media">
+                        <img src="Media/FarMarket.png" alt="Project 1">
+                    </div>
+                    <div class="card-info">
+                        <h3>FarMarket</h3>
+                        <p>Modern and minimal interface for business analytics.</p>
+                        <button id="farMarketBtn">View Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-inner">
+                    <div class="card-media">
+                        <img src="Media/Image.jpg" alt="Project 2">
+                    </div>
+                    <div class="card-info">
+                        <h3>Sell It!</h3>
+                        <p>A personal portfolio designed with glassmorphism style.</p>
+                        <button onclick="window.location.href='https://sellit.infinityfreeapp.com/'">View Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-inner">
+                    <div class="card-media">
+                        <img src="Media/CodeHaru.png" alt="Project 3">
+                    </div>
+                    <div class="card-info">
+                        <h3>codeHaru</h3>
+                        <p>Clean and intuitive mobile app interface for travel booking.</p>
+                        <button onclick="window.location.href='http://codeharuadoc.infinityfreeapp.com'">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <!-- Wave encima de Skills -->
+    <div class="wave-container bottom-wave">
+        <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="waveGradientBottom" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#001820;" />
+                    <stop offset="100%" style="stop-color:#007fa3;" />
+                </linearGradient>
+            </defs>
+            <path d="M0,0 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,120 L0,120 Z" fill="url(#waveGradientBottom)"></path>
+        </svg>
+    </div>
+
+    <section class="classcolor">
+        <h2>Soft Skills</h2>
+        <iframe src="skills/index.html" frameborder="0" style="width: 1300px; height: 230px; background-color: transparent !important;"></iframe>
+
+        <h2>Technical Skills</h2>
+        <iframe src="skills/index1.html" frameborder="0" style="width: 1300px; height: 230px; background-color: transparent !important;"></iframe>
+                <!-- Wave SVG -->
+        <div class="wave-container1">
+            <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,120 L0,120 Z" fill="#ffffff"></path>
+            </svg>
+        </div>
+    </section>
+
+<!-- ========== WORKSHOP SLIDER SECTION ========== -->
+ <h2 class="volunteers-title">Volunteers!</h2>
+<section class="km-workshop-section">
+    <div class="km-slider-wrap">
+
+        <div class="km-slider">
+
+            <!-- Slide 1 -->
+            <article class="km-slide" aria-hidden="false">
+                <div class="km-left">
+                    <img src="Media/AOS.jpg" class="km-icon" alt="">
+                </div>
+                <div class="km-right">
+                    <h2 class="km-title">Eglish Teacher</h2>
+                    <h3 class="km-company">AOS (Acceso a Oportunidades para Superarse)</h3>
+                    <span class="km-years">2025- 2025</span>
+                    <p class="km-desc">As a volunteer English teacher, I supported students in developing their communication skills through interactive lessons, personalized guidance, and creative learning activities, improving pronunciation, and strengthening grammar and vocabulary in a friendly and engaging environment.                    </p>
+                </div>
+            </article>
+
+            <!-- Slide 2 -->
+            <article class="km-slide" aria-hidden="true">
+                <div class="km-left">
+                    <img src="Media/Volunteers.jpeg" class="km-icon" alt="">
+                </div>
+                <div class="km-right">
+                    <h2 class="km-title">Beach Cleanup Volunteer</h2>
+                    <h3 class="km-company">ADOC Volunteer and Funzel</h3>
+                    <span class="km-years">2025 - 2025</span>
+                    <p class="km-desc">I Collaborated with Funzel and ADOC Volunteers in beach cleanup initiatives focused on environmental conservation and community impact. This experience strengthened my teamwork, leadership, and commitment to sustainability.                    </p>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Dots -->
+        <div class="km-dots">
+            <button class="km-dot km-dot--active" data-index="0"></button>
+            <button class="km-dot" data-index="1"></button>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    const slides = Array.from(document.querySelectorAll('.km-slide'));
+const dots = Array.from(document.querySelectorAll('.km-dot'));
+
+let idx = 0;
+const DURATION = 6000;
+
+function goTo(i) {
+    slides.forEach((s, n) => {
+        s.setAttribute('aria-hidden', n === i ? 'false' : 'true');
+    });
+
+    dots.forEach((d, n) => {
+        d.classList.toggle('km-dot--active', n === i);
+    });
+
+    idx = i;
+}
+
+function nextSlide() {
+    goTo((idx + 1) % slides.length);
+}
+
+// inicial
+goTo(0);
+
+// auto slide
+let timer = setInterval(nextSlide, DURATION);
+
+// dots click
+dots.forEach(d => {
+    d.addEventListener('click', () => {
+        const newIndex = Number(d.dataset.index);
+        goTo(newIndex);
+
+        clearInterval(timer);
+        timer = setInterval(nextSlide, DURATION);
+    });
+});
+
+</script>
+
+        <!-- Wave encima de Skills -->
+    <div class="wave-container bottom-wave">
+        <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="waveGradientBottom" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#001820;" />
+                    <stop offset="100%" style="stop-color:#007fa3;" />
+                </linearGradient>
+            </defs>
+            <path d="M0,0 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,120 L0,120 Z" fill="url(#waveGradientBottom)"></path>
+        </svg>
+    </div>
+
+    <section class="classcolor">
+
+        <section class="contact-section">
+            <h2>Let’s Get in Touch!</h2>
+    <div class="contact-card">
+
+        <div class="contact-left">
+
+            <form class="contact-form" id="contact-form"
+      action="https://api.web3forms.com/submit"
+      method="POST">
+
+    <!-- REQUIRED: Your Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="e7aa1e04-c510-4660-9c24-e39a887db0fb" />
+
+    <label>Your Name</label>
+    <input type="text" name="name" required>
+
+    <label>Your Email</label>
+    <input type="email" name="email" required>
+
+    <label>Your Message</label>
+    <textarea name="message" placeholder="Write your message..." required></textarea>
+
+    <button type="submit">Send Message</button>
+</form>
+<script>
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    const response = await fetch(form.action, {
+        method: "POST",
+        body: formData
+    });
+
+    if (response.ok) {
+        alert("Tu mensaje ha sido enviado correctamente 🎉");
+        form.reset();
+    } else {
+        alert("Ocurrió un error al enviar el mensaje. Intenta de nuevo.");
+    }
+});
+</script>
+
+        </div>
+
+        <div class="contact-right">
+
+            <div class="contact-illustration">
+                <img src="Media/Outlook.png" alt="illustration">
+            </div>
+
+            <div class="contact-info">
+                <p><strong>Kevin Alejandro Melgar Cruz</strong></p>
+                <p><strong>Country: </strong> Salvador</p>
+
+                <p><strong>Tel: </strong>+503 7474-443</p>
+                <p><strong>Email: </strong>kevin.melgar2112@gmail.com</p>
+            </div>
+
+    </div>
+</section>
+    </section>
+
+        <section class="classcolor">
+    <footer class="km-footer">
+    <div class="km-footer-content">
+
+        <div class="km-footer-left">
+            <h3>Kevin Melgar</h3>
+            <p>Design • Innovation • Creativity</p>
+        </div>
+
+        <div class="km-footer-right">
+            <p>© 2025 Kevin Melgar — All rights reserved.</p>
+        </div>
+
+    </div>
+</footer>
+</section>
+
+<!-- Modal para video -->
+<div id="videoModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <video id="modalVideo" width="100%" controls>
+            <source src="Media/FarMarket.mp4" type="video/mp4">
+            Tu navegador no soporta video.
+        </video>
+    </div>
+</div>
+
+<script>
+// Seleccionamos elementos
+const modal = document.getElementById('videoModal');
+const modalVideo = document.getElementById('modalVideo');
+const closeBtn = document.querySelector('.close');
+const farMarketBtn = document.getElementById('farMarketBtn');
+
+// Abrir modal al hacer clic en el botón
+farMarketBtn.addEventListener('click', () => {
+    modal.style.display = 'block';
+    modalVideo.play();
+});
+
+// Cerrar modal al hacer clic en "x"
+closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+    modalVideo.pause();
+    modalVideo.currentTime = 0;
+});
+
+// Cerrar modal al hacer clic fuera del contenido
+window.addEventListener('click', (e) => {
+    if(e.target === modal){
+        modal.style.display = 'none';
+        modalVideo.pause();
+        modalVideo.currentTime = 0;
+    }
+});
+</script>
+
+
+</body>
+</html>
